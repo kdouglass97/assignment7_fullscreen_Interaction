@@ -1,37 +1,23 @@
 let button;
 let ele;
-let song;
+let link1;
+//let song;
 
-function preload() {
-    song = loadSound('assets/lofi.mp3');
-}
+//function preload() {
+//    song = loadSound('assets/lofi.mp3');
+//}
 function setup() {
   createCanvas(windowWidth, windowHeight);
     
     button = createButton('8');
-    song.loop();
    
     repositionButtons();
     
     button.mousePressed(bColor);
 
-
+    myEl = createElement("p1","press the magic 8");
     
-//    myEl = createElement("p1","press the magic 8");
-    
-
-//    preLoad(lofi.mp3);
-    
-//    ele = createAudio('lofi.mp3');
-
-  // here we set the element to autoplay
-  // The element will play as soon
-  // as it is able to do so.
-    ele.autoplay(true);
-
-
-//    ball = ellipse();
-
+    link1 = createA('https://www.youtube.com/watch?v=cbuZfY2S2UQ&ab_channel=jaren134jaren134', 'set the mood', '[_blank]');
 }
 
 function draw() {
@@ -40,6 +26,10 @@ function draw() {
     myEl.style('font-family', 'Montserrat');
     myEl.style('font-size', '20px');
     myEl.style('black');
+    
+    link1.position(width/2, height-100);
+    link1.style('black');
+    
     
     fill(0);
     ellipseMode(CENTER);
