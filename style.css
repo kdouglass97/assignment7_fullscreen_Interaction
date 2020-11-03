@@ -1,0 +1,23 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+button { 
+    border: none;
+    border-radius: 45px;
+    width: 75px;
+    height: 75px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+
+}
+
+button:hover {
+    background-color:skyblue;
+    color: black;
+}
